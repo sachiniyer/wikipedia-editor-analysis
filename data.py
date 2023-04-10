@@ -20,6 +20,7 @@ while True:
     for page in data["query"]["allpages"]:
         page_title = page["title"]
 
+        contributors_params = {
             "action": "query",
             "prop": "contributors",
             "titles": page_title,
@@ -56,7 +57,6 @@ while True:
             print(f"data for '{page_title}':")
             print(datas)
 
-    check if there are more pages to retrieve
     if "continue" in data:
        params.update(data["continue"])
     else:
