@@ -9,3 +9,5 @@ Let each editor be represented with a list of articles that they edit and how ma
 Then, each editor's variance is $$var(x) = \sqrt{\left(\sum_{i=1}^n dist(a_i, E[x]) * c_i\right) / \left(\sum_{i=1}^n c_i\right)}$$
 
 This project aims to calculate Wikipedia editors' variance.
+
+![video](video.mp4)
